@@ -15,6 +15,8 @@ public:
 
     void print()const;
     void move(int delta_x, int delta_y);
+
+    friend double distance(const Point &a, const Point &b);
 };
 
 #endif
