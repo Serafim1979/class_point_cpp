@@ -12,7 +12,7 @@ void Point::set_y(int _y)
     y = _y >= 0 ? _y : 0;
 }
 
-void Point::print()
+void Point::print()const
 {
     std::cout << '(' << x << ', ' << y << ')';
 }

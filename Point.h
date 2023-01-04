@@ -7,13 +7,13 @@ class Point
 private:
     int x, y;
 public:
-    int get_x(){return x;} // default inline function
-    int get_y(){return y;}
+    int get_x()const{return x;} // default inline function
+    int get_y()const{return y;}
 
     void set_x(int);
     void set_y(int);
 
-    void print();
+    void print()const;
     void move(int delta_x, int delta_y);
 };
 
