@@ -12,6 +12,9 @@ public:
 
     void set_x(int);
     void set_y(int);
+
+    void print();
+    void move(int delta_x, int delta_y);
 };
 
 #endif
