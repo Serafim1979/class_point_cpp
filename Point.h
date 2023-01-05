@@ -8,6 +8,11 @@ private:
     int x, y;
 public:
     Point();
+    Point(const Point &);
+    Point(int);
+    Point(int, int);
+
+    ~Point();
     int get_x()const{return x;} // default inline function
     int get_y()const{return y;}
 

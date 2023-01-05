@@ -6,7 +6,32 @@
 
 Point::Point()
 {
+    x = y = 0;
     std::cout << "Default constructor" << std::endl;
+}
+
+Point::Point(const Point &other)
+{
+    x = other.x;
+    y = other.y;
+    std::cout << "Copy Constructor" << std::endl;
+}
+
+Point::Point(int _x)
+{
+    x = _x >= 0 ? _x : 0;
+    y = 0;
+}
+
+Point::Point(int _x, int _y)
+{
+    x = _x >= 0 ? _x : 0;
+    y = _y >= 0 ? _y : 0;
+}
+
+Point::~Point()
+{
+    std::cout << "Calling the Destructor" << std::endl;
 }
 
 void Point::set_x(int _x)
