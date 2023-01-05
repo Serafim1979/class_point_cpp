@@ -3,6 +3,12 @@
 #include <cmath>
 #include "Point.h"
 
+
+Point::Point()
+{
+    std::cout << "Default constructor" << std::endl;
+}
+
 void Point::set_x(int _x)
 {
     x = _x >= 0 ? _x : 0;

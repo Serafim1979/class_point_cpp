@@ -7,6 +7,7 @@ class Point
 private:
     int x, y;
 public:
+    Point();
     int get_x()const{return x;} // default inline function
     int get_y()const{return y;}
 
