@@ -5,15 +5,16 @@
 
 
 Point::Point()
+    : x(0)
+    , y(0)
 {
-    x = y = 0;
     std::cout << "Default constructor" << std::endl;
 }
 
 Point::Point(const Point &other)
+    : x(other.x)
+    , y(y = other.y)
 {
-    x = other.x;
-    y = other.y;
     std::cout << "Copy Constructor" << std::endl;
 }
 

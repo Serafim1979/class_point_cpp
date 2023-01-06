@@ -9,8 +9,8 @@ private:
 public:
     Point();
     Point(const Point &);
-    Point(int);
-    Point(int, int);
+    explicit Point(int);
+    explicit Point(int, int);
 
     ~Point();
     int get_x()const{return x;} // default inline function
